@@ -20,6 +20,11 @@ int main() {
     int x = 1, y = 2, z = 3;
     cout << "x = " << x << ", y = " << y << ", z = " << z << endl;
 
+    /* Can also assign the same value to multiple variables
+    in one line */
+    x = y = z = 50;
+    cout << "x = " << x << ", y = " << y << ", z = " << z << endl;
+
     cout << endl;
     return 0;
 }
