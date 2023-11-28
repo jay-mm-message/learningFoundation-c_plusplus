@@ -15,6 +15,11 @@ int main() {
     int myNum = 15;
     cout << myNum << endl;
 
+    /* To declare more than one variable of the same type,
+    use a comma-separed list */
+    int x = 1, y = 2, z = 3;
+    cout << "x = " << x << ", y = " << y << ", z = " << z << endl;
+
     cout << endl;
     return 0;
 }
