@@ -41,6 +41,15 @@ int main() {
     string greeting = "Hello";
     cout << "greeting: " << greeting << endl;
 
+    /* Concatenate strings with the append() function */
+    string fullName = "";
+    string firstName = "Joe";
+    string lastName = "Doe";
+
+    fullName.append(firstName).append(" ").append(lastName);
+
+    cout << "fullName: " << fullName << endl;
+
     cout << endl;
     return 0;
 }
