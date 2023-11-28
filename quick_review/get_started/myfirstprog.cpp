@@ -33,6 +33,12 @@ int main() {
 
     cout << "xx = " << xx << endl;
 
+    int xxx;
+    cout << "Type a number: ";
+    cin >> xxx;
+    cout << "xxx = " << xxx << endl;
+
+
     cout << endl;
     return 0;
 }
