@@ -61,6 +61,12 @@ int main() {
     number inside square brackets */
     cout << "txt[0] is " << txt[0] << endl;
 
+    /* use the getline() function to read a line of text */
+    cout << "Type your full name: ";
+    cin.clear();
+    cin.ignore();
+    getline(cin, fullName);
+    cout << "Your full name is: " << fullName << endl;
 
     cout << endl;
     return 0;
