@@ -10,5 +10,11 @@ int main() {
     cout << "Learning c plus plus.";
 
     cout << endl;
+    /* Create a variable called myNum of type int and assign
+     it the value 15 */
+    int myNum = 15;
+    cout << myNum << endl;
+
+    cout << endl;
     return 0;
 }
