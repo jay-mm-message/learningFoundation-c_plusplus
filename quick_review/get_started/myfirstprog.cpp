@@ -50,6 +50,10 @@ int main() {
 
     cout << "fullName: " << fullName << endl;
 
+    /* use the length() */
+    string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    cout << "txt length is " << txt.length() << endl;
+
     cout << endl;
     return 0;
 }
