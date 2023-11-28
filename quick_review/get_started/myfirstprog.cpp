@@ -57,6 +57,11 @@ int main() {
     /* use the size() */
     cout << "txt size is " << txt.size() << endl;
 
+    /* prints first charactor in txt by referring to its index
+    number inside square brackets */
+    cout << "txt[0] is " << txt[0] << endl;
+
+
     cout << endl;
     return 0;
 }
