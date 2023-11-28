@@ -54,6 +54,9 @@ int main() {
     string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     cout << "txt length is " << txt.length() << endl;
 
+    /* use the size() */
+    cout << "txt size is " << txt.size() << endl;
+
     cout << endl;
     return 0;
 }
