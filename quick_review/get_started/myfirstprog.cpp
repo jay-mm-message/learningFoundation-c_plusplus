@@ -38,6 +38,8 @@ int main() {
     cin >> xxx;
     cout << "xxx = " << xxx << endl;
 
+    string greeting = "Hello";
+    cout << "greeting: " << greeting << endl;
 
     cout << endl;
     return 0;
