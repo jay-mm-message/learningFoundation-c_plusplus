@@ -68,6 +68,10 @@ int main() {
     getline(cin, fullName);
     cout << "Your full name is: " << fullName << endl;
 
+    cout << sqrt(64) << endl;
+    cout << round(2.6) << endl;
+    cout << log(2) << endl;
+    
     cout << endl;
     return 0;
 }
