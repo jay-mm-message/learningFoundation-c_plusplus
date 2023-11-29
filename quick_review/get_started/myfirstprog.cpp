@@ -196,10 +196,12 @@ int main() {
     }
     
     string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+    cout << "cars size(string) is " << sizeof(cars) / sizeof(string) << endl;
+    cout << "cars size(char) is " << sizeof(cars) / sizeof(char) << endl;
     for (string car : cars) {
         cout << "car: " << car << endl;
     }
-
+    
     cout << endl;
     return 0;
 }
