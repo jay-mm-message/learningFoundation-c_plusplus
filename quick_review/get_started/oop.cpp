@@ -31,9 +31,37 @@ void MyClass::myObjShow() {
     cout << "student: " << myNum << ", name: " << myString << endl;
 };
 
+class Vehicle {
+    public:
+        string color;
+        string transportationType;
+    public:
+        // Sea, Land, and Air Transportation
+        virtual void showInfo() {
+            cout << "color: " << color << endl;
+            cout << "transportation type: " << transportationType << endl;
+        };
+};
+
+class Car: public Vehicle {
+    public:
+        string brand;
+    public:
+        void showInfo() override {
+            Vehicle::showInfo();
+            cout << "brand: " << brand << endl;
+        };
+};
+
 int main(int argc, char const *argv[])
 {
     /* code */
+    Car carObj1;
+    carObj1.color = "Red";
+    carObj1.brand = "Audi";
+    carObj1.transportationType = "Land";
+    carObj1.showInfo();
+    
     MyClass obj1, obj2;
     obj1.setMyNum(1);
     obj1.setMyString("Jay");
