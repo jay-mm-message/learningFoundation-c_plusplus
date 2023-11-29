@@ -182,6 +182,19 @@ int main() {
         }
         cout << "i = " << i << endl;
     }
+
+    for (size_t i = 0; i < 6; i++)
+    {
+        /* code */
+        if (i == 4)
+        {
+            /* code */
+            continue;
+        }
+        
+        cout << "i = " << i << endl;
+    }
+    
     
 
     cout << endl;
