@@ -32,7 +32,7 @@ void MyClass::myObjShow() {
 };
 
 class Vehicle {
-    public:
+    protected:
         string color;
         string transportationType;
     public:
@@ -47,6 +47,14 @@ class Car: public Vehicle {
     public:
         string brand;
     public:
+        // string color;
+        // string transportationType;
+        void setColor(string c) {
+            Vehicle::color = c;
+        };
+        void setTransportationType(string t) {
+            Vehicle::transportationType = t;
+        };
         void showInfo() override {
             Vehicle::showInfo();
             cout << "brand: " << brand << endl;
@@ -57,11 +65,11 @@ int main(int argc, char const *argv[])
 {
     /* code */
     Car carObj1;
-    carObj1.color = "Red";
+    carObj1.setColor("Red");
     carObj1.brand = "Audi";
-    carObj1.transportationType = "Land";
+    carObj1.setTransportationType("Land");
     carObj1.showInfo();
-    
+
     MyClass obj1, obj2;
     obj1.setMyNum(1);
     obj1.setMyString("Jay");
