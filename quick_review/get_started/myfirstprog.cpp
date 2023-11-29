@@ -195,7 +195,10 @@ int main() {
         cout << "i = " << i << endl;
     }
     
-    
+    string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (string car : cars) {
+        cout << "car: " << car << endl;
+    }
 
     cout << endl;
     return 0;
