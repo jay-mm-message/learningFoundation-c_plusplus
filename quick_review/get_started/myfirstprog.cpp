@@ -157,6 +157,16 @@ int main() {
         cout << "i = " << i << endl;
     }
     
+    for (size_t i = 0; i < 5; i++)
+    {
+        /* code */
+        for (size_t j = 0; j < 5; j++)
+        {
+            /* code */
+            cout << "i = " << i << ", j = " << j << endl;
+        }
+    }
+    
 
     cout << endl;
     return 0;
