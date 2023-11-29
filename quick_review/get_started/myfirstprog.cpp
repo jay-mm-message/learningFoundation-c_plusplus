@@ -151,6 +151,13 @@ int main() {
         ++i;
     } while(i < 5);
 
+    for (size_t i = 0; i < 5; i++)
+    {
+        /* code */
+        cout << "i = " << i << endl;
+    }
+    
+
     cout << endl;
     return 0;
 }
