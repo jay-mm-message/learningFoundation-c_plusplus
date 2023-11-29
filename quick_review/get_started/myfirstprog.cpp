@@ -102,6 +102,16 @@ int main() {
     } else {
         cout << "Good evening" << endl;
     }
+
+    time = 7;
+    string result = (time == 7)? "Good morning":"Good day";
+    cout << result << endl;
+
+    time = 8;
+    result = (time == 7)? "Good morning":"Good day";
+    cout << result << endl;
+
+
     cout << endl;
     return 0;
 }
