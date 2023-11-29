@@ -2,7 +2,7 @@
 using namespace std;
 
 // Function declaration
-void myFunction(string name);
+void myFunction(string name = "bystander");
 
 int main(int argc, char const *argv[])
 {
@@ -10,6 +10,7 @@ int main(int argc, char const *argv[])
     myFunction("Joe");
     myFunction("Ellen");
     myFunction("Jhon");
+    myFunction();
     
     cout << endl;
     return 0;
