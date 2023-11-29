@@ -29,6 +29,14 @@ int main(int argc, char const *argv[])
     cout << "cars2.brand: " << cars2.brand << endl;
     cout << "cars2.model: " << cars2.model << endl;
     cout << "cars2.year: " << cars2.year << endl;
-    
+
+    string food = "Pizza";
+    string *ptr = &food;
+
+    cout << "food: " << food << endl;
+    cout << "&food: \t" << &food << endl;
+    cout << "*ptr: " << *ptr << endl;
+    cout << "ptr: \t" << ptr << endl;
+
     return 0;
 }
