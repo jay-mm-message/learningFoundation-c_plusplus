@@ -174,6 +174,15 @@ int main() {
         ++arr_idx;
     }
     
+    for (size_t i = 0; i < 6; i++)
+    {
+        /* code */
+        if (i == 4) {
+            break;
+        }
+        cout << "i = " << i << endl;
+    }
+    
 
     cout << endl;
     return 0;
