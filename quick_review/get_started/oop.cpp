@@ -8,6 +8,13 @@ class MyClass {
         string myString;
     public:
         void myObjShow();
+    public:
+        // Constructor
+        MyClass() {}
+        MyClass(int n, string st) {
+            myNum = n;
+            myString = st;
+        }
 };
 
 void MyClass::myObjShow() {
