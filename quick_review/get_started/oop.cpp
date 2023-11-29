@@ -7,9 +7,11 @@ class MyClass {
         int myNum;
         string myString;
     public:
-        void myObjShow() {
-            cout << "student: " << myNum << ", name: " << myString << endl;
-        }
+        void myObjShow();
+};
+
+void MyClass::myObjShow() {
+    cout << "student: " << myNum << ", name: " << myString << endl;
 };
 
 int main(int argc, char const *argv[])
