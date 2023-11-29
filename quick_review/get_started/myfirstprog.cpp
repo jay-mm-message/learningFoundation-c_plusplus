@@ -139,6 +139,12 @@ int main() {
             cout << "nothing" << endl;
     }
 
+    int i = 0;
+    while (i < 5) {
+        cout << "i = " << i << endl;
+        ++i;
+    }
+
     cout << endl;
     return 0;
 }
