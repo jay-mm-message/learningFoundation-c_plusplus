@@ -166,6 +166,13 @@ int main() {
             cout << "i = " << i << ", j = " << j << endl;
         }
     }
+
+    int arr_i[] = {1, 2, 3, 4, 5};
+    int arr_idx = 0;
+    for (int arr : arr_i) {
+        cout << "arr[" << arr_idx << "] = " << arr << endl;
+        ++arr_idx;
+    }
     
 
     cout << endl;
