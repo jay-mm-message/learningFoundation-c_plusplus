@@ -4,6 +4,7 @@ using namespace std;
 // Function declaration
 void myFunction(string name = "bystander");
 int max(int a, int b);
+void swapNums(int &a, int &b); // called by reference
 
 int main(int argc, char const *argv[])
 {
@@ -17,6 +18,11 @@ int main(int argc, char const *argv[])
     int b = 200;
     cout << "(" << a << ", " << b << "), max is " << max(a, b) << endl;
     
+    cout << "a: " << a << ", b: " << b << endl;
+    cout << "call swap(" << a << ", " << b << ")" << endl;
+    swapNums(a, b);
+    cout << "a: " << a << ", b: " << b << endl;
+
     cout << endl;
     return 0;
 }
@@ -28,4 +34,10 @@ void myFunction(string name) {
 
 int max(int a, int b) {
     return (a<b)?b:a;
+}
+
+void swapNums(int &a, int &b) {
+    int tmp = a;
+    a = b;
+    b = tmp;
 }
