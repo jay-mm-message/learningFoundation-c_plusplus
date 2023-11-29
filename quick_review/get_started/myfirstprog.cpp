@@ -93,6 +93,15 @@ int main() {
     } else {
         cout << "18 is less than 20" << endl;
     }
+
+    int time = 7;
+    if (time > 7) {
+        cout << "Good day" << endl;
+    } else if (time <= 7 && time >= 5) {
+        cout << "Good morning" << endl;
+    } else {
+        cout << "Good evening" << endl;
+    }
     cout << endl;
     return 0;
 }
