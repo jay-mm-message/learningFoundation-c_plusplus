@@ -3,10 +3,12 @@ using namespace std;
 
 // Create a class called MyClass
 class MyClass {
-    public:
+    private:
         int myNum;
         string myString;
     public:
+        void setMyNum(int n);
+        void setMyString(string st);
         void myObjShow();
     public:
         // Constructor
@@ -17,6 +19,14 @@ class MyClass {
         }
 };
 
+void MyClass::setMyNum(int n) {
+    this->myNum = n;
+};
+
+void MyClass::setMyString(string st) {
+    this->myString = st;
+};
+
 void MyClass::myObjShow() {
     cout << "student: " << myNum << ", name: " << myString << endl;
 };
@@ -25,12 +35,12 @@ int main(int argc, char const *argv[])
 {
     /* code */
     MyClass obj1, obj2;
-    obj1.myNum = 1;
-    obj1.myString = "Jay";
+    obj1.setMyNum(1);
+    obj1.setMyString("Jay");
     obj1.myObjShow();
     
-    obj2.myNum = 2;
-    obj2.myString = "Ellen";
+    obj2.setMyNum(2);
+    obj2.setMyString("Ellen");
     obj2.myObjShow();
 
     MyClass obj3(3, "Jessica");
