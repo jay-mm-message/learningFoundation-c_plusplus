@@ -111,6 +111,33 @@ int main() {
     result = (time == 7)? "Good morning":"Good day";
     cout << result << endl;
 
+    string week[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    int today = 7;
+    switch (today) {
+        case 1:
+            cout << week[0] << endl;
+            break;
+        case 2:
+            cout << week[1] << endl;
+            break;
+        case 3:
+            cout << week[2] << endl;
+            break;
+        case 4:
+            cout << week[3] << endl;
+            break;
+        case 5:
+            cout << week[4] << endl;
+            break;
+        case 6:
+            cout << week[5] << endl;
+            break;
+        case 7:
+            cout << week[6] << endl;
+            break;
+        default:
+            cout << "nothing" << endl;
+    }
 
     cout << endl;
     return 0;
