@@ -84,6 +84,15 @@ int main() {
         cout << "Not old enough to vote!" << endl;
     }
 
+    if (20 > 18) {
+        cout << "20 is greater than 18." << endl;
+    }
+
+    if (20 < 18) {
+        cout << "nothing" << endl;
+    } else {
+        cout << "18 is less than 20" << endl;
+    }
     cout << endl;
     return 0;
 }
