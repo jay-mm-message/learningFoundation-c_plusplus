@@ -145,6 +145,12 @@ int main() {
         ++i;
     }
 
+    i = 0;
+    do {
+        cout << "i = " << i << endl;
+        ++i;
+    } while(i < 5);
+
     cout << endl;
     return 0;
 }
