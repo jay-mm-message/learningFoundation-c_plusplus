@@ -33,6 +33,9 @@ int main(int argc, char const *argv[])
     obj2.myString = "Ellen";
     obj2.myObjShow();
 
+    MyClass obj3(3, "Jessica");
+    obj3.myObjShow();
+
     //cout << "student: " << obj1.myNum << ", name: " << obj1.myString << endl;
     //cout << "student: " << obj2.myNum << ", name: " << obj2.myString << endl;
 
