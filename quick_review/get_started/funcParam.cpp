@@ -7,6 +7,10 @@ int max(int a, int b);
 void swapNums(int &a, int &b); // called by reference
 void show_array(int arr[], int size);
 
+/* recursive
+10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0 */
+int sum(int values);
+
 int main(int argc, char const *argv[])
 {
     /* code */
@@ -26,6 +30,9 @@ int main(int argc, char const *argv[])
 
     int arrNums[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     show_array(arrNums, sizeof(arrNums)/sizeof(int));
+
+    // 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0
+    cout << sum(10) << endl;
 
     cout << endl;
     return 0;
@@ -53,4 +60,12 @@ void show_array(int arr[], int size) {
         cout << arr[i] << ' ';
     }
     cout << endl;
+}
+
+int sum(int values) {
+    if (values == 0) {
+        return 0;
+    } else {
+        return values + sum(values - 1);
+    }
 }
