@@ -71,7 +71,19 @@ int main() {
     cout << sqrt(64) << endl;
     cout << round(2.6) << endl;
     cout << log(2) << endl;
-    
+
+    /* Boolean expression returns a boolean value that is
+    either 1 (true) or 0 (false)*/
+
+    int myAge = 20;
+    int votingAge = 18;
+
+    if (myAge >=  votingAge) {
+        cout << "Old enough to vote!" << endl;
+    } else {
+        cout << "Not old enough to vote!" << endl;
+    }
+
     cout << endl;
     return 0;
 }
