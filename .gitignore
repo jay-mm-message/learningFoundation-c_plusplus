@@ -32,3 +32,4 @@
 *.app
 .vscode
 go.sh
+./quick_review/get_started/*.dSYM
