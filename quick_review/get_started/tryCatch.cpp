@@ -18,13 +18,14 @@ int main(int argc, char const *argv[])
         if (age >= 18) {
             cout << "Access granted - You are old enough.\n";
         } else {
-            throw (age);
+            //throw (age);
+            throw 555;
         }
     }
-    catch(int age)
+    catch(...)
     {
         cout << "Access denied - You must be at least 18 years old.\n";
-        cout << "Age are: " << age << endl;
+        // cout << "Age are: " << age << endl;
     }
     
     return 0;
